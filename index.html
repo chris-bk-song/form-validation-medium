@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div>
+      <h1>Form Validation (medium)</h1>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="text" minlength="5" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" minlength="6" maxlength="15" class="form-control" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="about-me">About Me (Optional)</label>
+        <input id="about-me" type="text" name="text" maxlength="250" class="form-control">
+      </div>
+    
+      <div class="form-group">
+        <label for="regex">Robot Check</label>
+        <input id="regex" type="text" class="form-control" placeholder="Are you a robot?" pattern="I am not a robot" title="Please enter 'I am not a robot' (case-sensitive)" required>
+      </div>
+    
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+  </html>

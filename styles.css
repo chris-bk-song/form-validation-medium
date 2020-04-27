@@ -1,0 +1,17 @@
+body {
+  margin-left: 10px;
+
+}
+
+.form-group {
+  width: 150px;
+}
+
+#email {
+  width: 300px;
+}
+
+#about-me {
+  width: 400px;
+  height: 200px;
+}
